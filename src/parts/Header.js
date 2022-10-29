@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-        <header className='absolute z-50 w-full px-4'>
-          <div className='container py-5 mx-auto'>
+        <header className='absolute z-50 w-full px-4 '>
+          <div className='container py-5 mx-auto fixed'>
             <div className='flex items-center flex-stretch'>
               <div className='flex items-center w-56'>
                 <img
@@ -21,25 +21,25 @@ export default function Header() {
                 >
 
                   <li className='py-6 mx-3 md:py-0'>
-                    <Link to="/showcase" className='text-white md:text-white hover:underline'
+                    <Link to="/showcase" className='text-white md:text-black hover:underline'
                     >Showcase
                     </Link>
                   </li>
 
                   <li className='py-6 mx-3 md:py-0'>
-                  <Link to="/catalog" className='text-white md:text-white hover:underline'
+                  <Link to="/catalog" className='text-white md:text-black hover:underline'
                   >Catalog
                   </Link>
                   </li>
 
                   <li className='py-6 mx-3 md:py-0'>
-                  <Link to="/delivery" className='text-white md:text-white hover:underline'
+                  <Link to="/delivery" className='text-white md:text-black hover:underline'
                   >Delivery
                   </Link>
                   </li>
 
                   <li className='py-6 mx-3 md:py-0'>
-                  <Link to="/rewards" className='text-white md:text-white hover:underline'
+                  <Link to="/rewards" className='text-white md:text-black hover:underline'
                   >Rewards
                   </Link>
                   </li>
@@ -51,7 +51,7 @@ export default function Header() {
                   <li className='block ml-6 md:hidden'>
                     <button
                       id="menu-toggler"
-                      className='relative z-50 flex items-center justify-center w-8 h-8 text-white md:text-white focus:outline-none'
+                      className='relative z-50 flex items-center justify-center w-8 h-8 text-white md:text-black focus:outline-none'
                     >
                       <svg
                         className='fill-current'
@@ -71,10 +71,10 @@ export default function Header() {
                       </svg>
                     </button>
                   </li>
-                  <li class="ml-6">
+                  <li className="ml-6">
                     <Link
 
-                      className='flex items-center justify-center w-8 h-8 text-white md:text-white'
+                      className='flex items-center justify-center w-8 h-8 text-white md:text-black'
                       to='/cart'
                     >
                       <svg
