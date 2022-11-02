@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../parts/Header'
+
+
 import Hero from "../parts/Hero"
 import BrowserRoom from '../parts/HomePage/BrowserRoom'
 import JustArr from '../parts/HomePage/JustArrived'
@@ -10,13 +12,13 @@ import Footer from '../parts/Footer'
 
 
 
-export default function HomePage(props) {
+export default function HomePage() {
   return (
     <>
-    <Header/>
-    <Hero/>
-    <BrowserRoom/>
-      <JustArr />
+    <Header theme="black" position="absolute"/>
+      <Hero />
+      <BrowserRoom />
+      <JustArr/>
       <Clients />
       <Sitemap />
       <Footer/>

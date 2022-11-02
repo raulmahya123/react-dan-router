@@ -5,6 +5,8 @@ import {BrowserRouter as Router,
 } from 'react-router-dom'
 import HomePage from "./pages/HomePage";
 import "./assets/css/app.css"
+import Details from './pages/Details';
+
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
     <div className="App">
 
      <Routes>
-     <Route path='/home' element={<HomePage/>}/>
+          <Route exact path='/' element={<HomePage />} />
+           <Route path='/categories/:idc' element={<Details/>}/>
      </Routes>
 
      </div>
