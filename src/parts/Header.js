@@ -8,10 +8,10 @@ import Login from './HomePage/Login';
 
 export default function Header({theme ,position}) {
   return (
-        <header className={[position, "sticky top-1  z-50 w-full px-4"].join()}>
-          <div className=' container py-5 mx-auto text-2xl ' >
-            <div className=' flex items-center flex-stretch'>
-          <div className='  flex items-center w-56'>
+        <header className={[position, " z-20 w-full px-4"].join()}>
+          <div className='container py-5 mx-auto ' >
+            <div className='flex items-center flex-stretch'>
+          <div className='flex items-center w-56 '>
             <Link to="/">
               <img
                   src="/images/content/logo.png"
