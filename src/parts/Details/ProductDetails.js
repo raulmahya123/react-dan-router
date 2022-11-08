@@ -5,7 +5,7 @@ export default function ProductDetails() {
      <section class="container mx-auto">
       <div class="flex flex-wrap my-4 md:my-12">
         <div class="w-full md:hidden px-4">
-          <h2 class="text-5xl font-semibold">Chair Thatty</h2>
+          <h2 class="text-5xl font-semibold">BATUAN</h2>
           <span class="text-xl">IDR 12.000.000</span>
         </div>
         <div class="flex-1">
@@ -14,10 +14,10 @@ export default function ProductDetails() {
               <div class="px-2">
                 <div
                   class="item selected"
-                  data-img="./images/content/showcase-1.front.jpg"
+                  data-img="/images/content/as1.jpg"
                 >
                   <img
-                    src="./images/content/showcase-1.front.jpg"
+                    src="/images/content/as1.jpg"
                     alt="front"
                     class="object-cover w-full h-full rounded-lg"
                   />
@@ -26,10 +26,10 @@ export default function ProductDetails() {
               <div class="px-2">
                 <div
                   class="item"
-                  data-img="./images/content/showcase-1.back.jpg"
+                  data-img="/images/content/as2.jpg"
                 >
                   <img
-                    src="./images/content/showcase-1.back.jpg"
+                    src="/images/content/as2.jpg"
                     alt="back"
                     class="object-cover w-full h-full rounded-lg"
                   />
@@ -38,10 +38,10 @@ export default function ProductDetails() {
               <div class="px-2">
                 <div
                   class="item"
-                  data-img="./images/content/showcase-1.rear.jpg"
+                  data-img="/images/content/as3.jpg"
                 >
                   <img
-                    src="./images/content/showcase-1.rear.jpg"
+                    src="/images/content/as3.jpg"
                     alt="rear"
                     class="object-cover w-full h-full rounded-lg"
                   />
@@ -50,10 +50,10 @@ export default function ProductDetails() {
               <div class="px-2">
                 <div
                   class="item"
-                  data-img="./images/content/showcase-1.side.jpg"
+                  data-img="/images/content/as4.jpg"
                 >
                   <img
-                    src="./images/content/showcase-1.side.jpg"
+                    src="/images/content/as4.jpg"
                     alt="side"
                     class="object-cover w-full h-full rounded-lg"
                   />
@@ -62,10 +62,10 @@ export default function ProductDetails() {
               <div class="px-2">
                 <div
                   class="item"
-                  data-img="./images/content/showcase-1.top.jpg"
+                  data-img="/images/content/as3.jpg"
                 >
                   <img
-                    src="./images/content/showcase-1.top.jpg"
+                    src="/images/content/as3.jpg"
                     alt="top"
                     class="object-cover w-full h-full rounded-lg"
                   />
@@ -75,7 +75,7 @@ export default function ProductDetails() {
             <div class="preview">
               <div class="item rounded-lg h-full overflow-hidden">
                 <img
-                  src="./images/content/showcase-1.front.jpg"
+                  src="/images/content/as1.jpg"
                   alt="front"
                   class="object-cover w-full h-full rounded-lg"
                 />
@@ -84,7 +84,7 @@ export default function ProductDetails() {
           </div>
         </div>
         <div class="flex-1 px-4 md:p-6">
-          <h2 class="text-5xl font-semibold">Chair Thatty</h2>
+          <h2 class="text-5xl font-semibold">BATU ARKREMIN</h2>
           <p class="text-xl">IDR 12.000.000</p>
 
           <a
@@ -112,20 +112,25 @@ export default function ProductDetails() {
                 d="M25.6499 4.508C25.407 4.22245 25.0472 4.05871 24.6626 4.05871H4.82655L4.42595 2.19571C4.34232 1.80709 4.06563 1.48078 3.68565 1.32272L0.890528 0.160438C0.567841 0.0261566 0.192825 0.168008 0.0528584 0.477043C-0.0872597 0.786176 0.0608116 1.14549 0.383347 1.27957L3.17852 2.4419L6.2598 16.7708C6.38117 17.3351 6.90578 17.7446 7.50723 17.7446H22.7635C23.1152 17.7446 23.4003 17.4715 23.4003 17.1346C23.4003 16.7976 23.1152 16.5245 22.7635 16.5245H7.50728L7.13247 14.7815H22.8814C23.4828 14.7815 24.0075 14.3719 24.1288 13.8076L25.9101 5.52488C25.9876 5.16421 25.8928 4.79349 25.6499 4.508ZM22.8814 13.5615H6.87012L5.08895 5.27879L24.6626 5.27884L22.8814 13.5615Z"
               />
             </svg>
-            Add to Cart</a
+            PEMINJAMAN BARANG</a
           >
           <hr class="my-8" />
 
           <h6 class="text-xl font-semibold mb-4">About the product</h6>
           <p class="text-xl leading-7 mb-6">
-            Tailored to a level of perfection synonymous with that of a Savile
-            Row suit and with understated quality in the detail, Jetty has been
-            influenced by timeless 1950s style.
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book.
+            
           </p>
           <p class="text-xl leading-7">
-            Providing a subtle nod to the past, Jetty also provides a perfect
-            solution for the way we work today. A comprehensive product family,
-            Jetty features a variety of elegant chairs and sofas.
+            It has survived not only five centuries,
+            but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the
+            1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ import Breadcrumb from '../component/Breadcrumb/index'
 // import Hero from "../parts/Hero"
 // import BrowserRoom from '../parts/HomePage/BrowserRoom'
 // import JustArr from '../parts/HomePage/JustArrived'
-import Clients from '../parts/Clients'
+
 import Sitemap from '../parts/Sitemap'
 import Footer from '../parts/Footer'
 import ProductDetails from '../parts/Details/ProductDetails'
@@ -26,7 +26,7 @@ export default function HomePage() {
         ]} />
       <ProductDetails />
       <Suggestion/>
-      <Clients />
+
       <Sitemap />
       <Footer/>
     </>

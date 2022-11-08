@@ -1,5 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {
+Link
+} from "react-router-dom";
+import Login from './HomePage/Login';
+
 
 
 export default function Header({theme ,position}) {
@@ -41,7 +45,7 @@ export default function Header({theme ,position}) {
                   </li>
 
                   <li className='py-6 mx-3 md:py-0'>
-                  <Link to="/delivery" className={[" hover:underline",theme === "white" ? 
+                  <Link to={Login} className={[" hover:underline",theme === "white" ? 
                   "text-black md:text-white" :
                    "text-white md:text-black"
                   ].join("")}
@@ -58,6 +62,15 @@ export default function Header({theme ,position}) {
                   </Link>
                   </li>
 
+                   <li className='py-6 mx-3 md:py-0'>
+                  <Link to='/Login' className={[" hover:underline",theme === "white" ? 
+                  "text-black md:text-white" :
+                   "text-white md:text-black"
+                  ].join("")}
+                  >login
+                  </Link>
+                  </li>
+              
                 </ul>
               </div>
               <div className='w-auto'>

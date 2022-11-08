@@ -14,7 +14,7 @@ export default function Suggestion() {
             <div class="rounded-xl p-4 pb-8 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-36">
                 <img
-                  src="/images/content/chair-1.png"
+                  src="/images/content/as1.jpg"
                   alt=""
                   class="w-full h-full object-cover object-center"
                 />
@@ -30,7 +30,7 @@ export default function Suggestion() {
             <div class="rounded-xl p-4 pb-8 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-36">
                 <img
-                  src="/images/content/chair-2.png"
+                  src="/images/content/as2.jpg"
                   alt=""
                   class="w-full h-full object-cover object-center"
                 />
@@ -46,7 +46,7 @@ export default function Suggestion() {
             <div class="rounded-xl p-4 pb-8 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-36">
                 <img
-                  src="/images/content/chair-3.png"
+                  src="/images/content/as3.jpg"
                   alt=""
                   class="w-full h-full object-cover object-center"
                 />
@@ -62,7 +62,7 @@ export default function Suggestion() {
             <div class="rounded-xl p-4 pb-8 relative bg-white">
               <div class="rounded-xl overflow-hidden card-shadow w-full h-36">
                 <img
-                  src="/images/content/chair-1.png"
+                  src="/images/content/as4.jpg"
                   alt=""
                   class="w-full h-full object-cover object-center"
                 />

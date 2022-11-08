@@ -12,6 +12,7 @@ import Footer from '../parts/Footer'
 
 
 
+
 export default function HomePage() {
   return (
     <>
