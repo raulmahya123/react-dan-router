@@ -9,23 +9,10 @@ export default function Hero() {
         SELAMAT DATANG <br className="" />
       </h1>
       <h2 className="px-8 my-6 text-base tracking-wide md:px-0 md:text-lg">
-        Lorem Ipsum is simply dummy text of the printing and t
-        ypesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text 
-        ever since
-         the 1500s, 
-        when an unknown printer took a galley of type and scrambled 
-        it to make a type 
-        specimen book. It has survived not only five centuries, but also
-         the leap into 
-        electronic typesetting, remaining essentially unchanged. It 
-        was popularised in the
-         1960s with the release of Letraset sheets containing Lorem 
-         Ipsum passages, and more 
-         recently with desktop publishing software like Aldus
-         PageMaker including versions of Lorem Ipsum.c
-        <br className="hidden lg:block" />membuat ruangan terasa homey
-      </h2>
+          Kami menyediakan furniture berkelas yang
+          <br className="hidden lg:block" />
+          membuat ruangan terasa homey
+        </h2>
       <div>
         <a
           href="#browse-the-room"
@@ -55,7 +42,7 @@ export default function Hero() {
           ></button>
         </div>
         <img
-        src="images/content/lokasi.jpg"
+        src="images/content/image-section-1.png"
           alt="hero 1"
           className="absolute inset-0 object-cover object-center w-full h-full md:relative"
         />

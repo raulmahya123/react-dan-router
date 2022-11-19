@@ -2,13 +2,13 @@ import React from 'react'
 import {
 Link
 } from "react-router-dom";
-import Login from './HomePage/Login';
+
 
 
 
 export default function Header({theme ,position}) {
   return (
-        <header className={[position, " z-20 w-full px-4"].join()}>
+        <header className={[position, " z-20 w-full px-4"].join("")}>
           <div className='container py-5 mx-auto ' >
             <div className='flex items-center flex-stretch'>
           <div className='flex items-center w-56 '>
@@ -44,14 +44,6 @@ export default function Header({theme ,position}) {
                   </Link>
                   </li>
 
-                  <li className='py-6 mx-3 md:py-0'>
-                  <Link to={Login} className={[" hover:underline",theme === "white" ? 
-                  "text-black md:text-white" :
-                   "text-white md:text-black"
-                  ].join("")}
-                  >Delivery
-                  </Link>
-                  </li>
 
                   <li className='py-6 mx-3 md:py-0'>
                   <Link to="/rewards" className={[" hover:underline",theme === "white" ? 
@@ -62,14 +54,7 @@ export default function Header({theme ,position}) {
                   </Link>
                   </li>
 
-                   <li className='py-6 mx-3 md:py-0'>
-                  <Link to='/Login' className={[" hover:underline",theme === "white" ? 
-                  "text-black md:text-white" :
-                   "text-white md:text-black"
-                  ].join("")}
-                  >login
-                  </Link>
-                  </li>
+
               
                 </ul>
               </div>

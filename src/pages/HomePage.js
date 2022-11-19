@@ -8,9 +8,8 @@ import JustArr from '../parts/HomePage/JustArrived'
 import Clients from '../parts/Clients'
 import Sitemap from '../parts/Sitemap'
 import Footer from '../parts/Footer'
-import useScrollAnchor from '../helpers/validations/useScrollAnchor'
-import useModalDOM from '../helpers/validations/useModalDOM'
-
+import useScrollAnchor from '../helpers/hooks/useScrollAnchor'
+import useModalDOM from '../helpers/hooks/useModalDOM'
 
 
 
