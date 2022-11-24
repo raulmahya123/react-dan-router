@@ -4,6 +4,55 @@ import React, {
 import useAsync from '../../helpers/hooks/useAsync'
 import fetch from '../../helpers/fetch'
 
+function Loading({ratio = {}}){
+  const dummy = [
+    {
+      "id": 1,
+      "ratio": {
+        "default": "1/9",
+        "md": "1/4"
+      }
+    },
+    {
+      "id": 2,
+      "ratio": {
+        "default": "1/9",
+        "md": "2/2"
+      }
+    },
+    {
+      "id": 3,
+      "ratio": {
+        "default": "1/9",
+        "md": "2/3"
+      }
+    },
+    {
+      "id": 4,
+      "ratio": {
+        "default": "1/9",
+        "md": "1/4"
+      }
+    }
+  ];
+  return dummy.map((item, index) => {
+  return  <div key={item.id}
+              className={`relative card 
+              ${ ratio?.wrapper.default?.[item.ratio.default]
+                } ${ ratio?.wrapper.md?.[item.ratio.md]}`}
+          style={{ height: index === 0 ? 180 : "auto"}}
+        >
+    <div className="bg-gray-300 rounded-lg w-full h-full">
+      <div className={`overlay ${ ratio?.meta?.[item.ratio.md]}`}
+      >
+        <div className="w-24 h-3 bg-gray-400 mt-3 rounded-full"></div>
+        <div className="w-36 h-3 bg-gray-400 mt-2 rounded-full"></div>
+      </div>
+    </div>
+                </div>
+})
+}
+
 export default function BrowserRoom() {
   const {
     data,
@@ -22,7 +71,7 @@ export default function BrowserRoom() {
       url: "/api/categories/?page=1&limit=4"
     }));
   }, [run]);
-  console.log(data, status, error);
+  
   
 
   const ratioClassNames = {
@@ -55,7 +104,7 @@ export default function BrowserRoom() {
       </div>
       
       <div className="grid grid-cols-9 grid-rows-2 gap-4">
-          {isLoading ? "Loading" :
+          {isLoading ? <Loading ratio={ ratioClassNames } /> :
             data.data.map((item, index) => {
               return (
                <div key={item.id}
@@ -75,10 +124,12 @@ export default function BrowserRoom() {
           >
               <h5 className="text-lg font-semibold">{item.title}</h5>
                 <span className="">
+                
                   {item.products} item{item.products > 1 ? "s" : ""}
                 </span>
           </div>
                 </div>
+                
             )             
             })
       }
