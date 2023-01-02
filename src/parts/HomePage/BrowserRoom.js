@@ -56,8 +56,6 @@ function Loading({ratio = {}}){
 export default function BrowserRoom() {
   const {
     data,
-    status,
-    error,
     run,
     isLoading
   } = useAsync({
