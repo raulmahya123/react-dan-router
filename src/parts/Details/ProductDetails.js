@@ -84,6 +84,7 @@ export default function ProductDetails({ data }) {
           <hr className="my-8" />
 
           <h6 className="text-xl font-semibold mb-4">About the product</h6>
+          <p className="text-xl">{data.description}</p>
           
         </div>
       </div>

@@ -60,7 +60,7 @@ export default function Header({ theme, position }) {
               </li>
               <li className="mx-3 py-6 md:py-0">
                 <Link
-                  to="/catalog"
+                  to="/Fosil"
                   className={[
                     "hover:underline",
                     theme === "white"
@@ -73,7 +73,7 @@ export default function Header({ theme, position }) {
               </li>
               <li className="mx-3 py-6 md:py-0">
                 <Link
-                  to="/delivery"
+                  to="/Artefak"
                   className={[
                     "hover:underline",
                     theme === "white"
@@ -81,7 +81,7 @@ export default function Header({ theme, position }) {
                       : "text-white md:text-black",
                   ].join(" ")}
                 >
-                  VERTEBRATA
+                  ARTEFAK
                 </Link>
               </li>
               <li className="mx-3 py-6 md:py-0">
@@ -94,7 +94,20 @@ export default function Header({ theme, position }) {
                       : "text-white md:text-black",
                   ].join(" ")}
                 >
-                  BATUAN/FOSIL
+                  VERTEBRATA
+                </Link>
+              </li>
+              <li className="mx-3 py-6 md:py-0">
+                <Link
+                  to="/Batuan"
+                  className={[
+                    "hover:underline",
+                    theme === "white"
+                      ? "text-black md:text-white "
+                      : "text-white md:text-black",
+                  ].join(" ")}
+                >
+                  BATUAN
                 </Link>
               </li>
             </ul>

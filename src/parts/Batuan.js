@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "../helpers/format/currency"
 import Header from './Header';
-import Veb from './Isi/Veb';
+import Fos from './Isi/Fos';
 
-export default function Vertebrata({ data }) {
+export default function Batuan({ data }) {
   return (
     <>
     <Header/>
@@ -13,7 +13,7 @@ export default function Vertebrata({ data }) {
         <div className="flex flex-start mb-4">
           <h3 className="text-2xl capitalize font-semibold">
             SELAMAT DATANG <br className="" />
-           DIGUDANG VERTEBRATA
+           DIGUDANG BATUAN
           </h3>
         </div>
         <div className="flex overflow-x-auto mb-4 -mx-3">
@@ -47,7 +47,7 @@ export default function Vertebrata({ data }) {
         </div>
       </div>
     </section>
-    <Veb/>
+    <Fos/>
     </>
   );
 }
