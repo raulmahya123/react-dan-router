@@ -1,53 +1,53 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "../helpers/format/currency"
-import Header from './Header';
-import Fos from './Isi/Fos';
 
-export default function Artefak({ data }) {
+import axios from 'axios';
+import React, { useState , useEffect } from 'react';
+import Header from './Header';
+
+
+
+
+function Artefak() {
+  const [data, setdata] = useState([]);
+  const [isLoading, setisLoading] = useState(false);
+  const [isError, setisError] = useState(false);
+
+  useEffect(() => {
+    setisLoading(true);
+    // URL Ganti dengan alamat github atau API kamu atau URL API MU
+    // Method @{get, post, put, patch, delete}
+    axios
+      .get("https://sbc-sebatcabut.herokuapp.com/fosils")
+      .then((response) => {
+        setdata(response.data.data.data);
+        console.log(response.data.data.data); // Menampilkan console log
+        setisLoading(false);
+      })
+      .catch((err) => {
+        // Jika Gagal
+        console.log(err);
+        setisError(true);
+        setisLoading(false);
+      });
+  }, []);
+
+  
+  if (isLoading) return <h1>Loading data</h1>;
+  else if (data && !isError)
   return (
-    <>
-    <Header/>
-    <section className="bg-gray-100 px-4 py-16">
-      <div className="container mx-auto">
-        <div className="flex flex-start mb-4">
-          <h3 className="text-2xl capitalize font-semibold">
-            SELAMAT DATANG <br className="" />
-           DIGUDANG ARTEFAK
-          </h3>
+    
+    <div>
+      <Header/>
+      {data &&
+      data.map((item) => (
+        <div>
+          <hr />
+          <h1>{item.id.toUpperCase()}</h1>
+          <i>{item.nama_koleksi}</i>
+          <h2>{item.lokasi_temuan}</h2>
+          <hr />
         </div>
-        <div className="flex overflow-x-auto mb-4 -mx-3">
-          {data?.map((item) => {
-            return (
-              <div
-                className="px-3 flex-none"
-                style={{ width: 320 }}
-                key={item.id}
-              >
-                <div className="rounded-xl p-4 pb-8 relative bg-white">
-                  <div className="rounded-xl overflow-hidden card-shadow w-full h-36">
-                    <img
-                      src={item.imageUrl}
-                      alt=""
-                      className="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <h5 className="text-lg font-semibold mt-4">{item.title}</h5>
-                  <span className="">{item.price.currency()}</span>
-                  <Link
-                    to={`/categories/${item.idc}/products/${item.id}`}
-                    className="stretched-link"
-                  >
-                    {/* <!-- fake children --> */}
-                  </Link>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-    <Fos/>
-    </>
-  );
+             ))}</div>
+  )
 }
+
+export default Artefak

@@ -1,7 +1,7 @@
 import React from 'react'
-import Gis from "../../Gis/gis"
-// import useGlobalContext from "../../helpers/hooks/useGlobalContext"
 import  "../../helpers/format/currency"
+import Gis from "../../Gis/gis"
+
 
 
 export default function ProductDetails({ data }) {
@@ -80,12 +80,12 @@ export default function ProductDetails({ data }) {
             </svg>
             Add to Cart
           </button> */}
-          <Gis/>
+
           <hr className="my-8" />
 
           <h6 className="text-xl font-semibold mb-4">About the product</h6>
           <p className="text-xl">{data.description}</p>
-          
+          <Gis/>
         </div>
       </div>
     </section>

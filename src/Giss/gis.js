@@ -10,14 +10,16 @@ export default function gis() {
   return (
     <MapContainer
     center={center}
-    zoom={6}
-    style={{width:'25vw', height:'25vh'}}
+    zoom={20}
+    style={{width:'16vw', height:'20vh'}}
     className='w-full h-full md:md-cols-2'
+    
     >  
     <TileLayer
     url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=AovbylPLNOywA6s1eoNJ"
     attribution= '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-    />
+
+   />
    {
     statesData.features.map((state)=>{
       const coordinates = state.geometry.coordinates[0].map((item)=> [item[1],item[0]]);
@@ -57,6 +59,8 @@ export default function gis() {
 
           }
         }}
+          
+
         />)
     })
    }

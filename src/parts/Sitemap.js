@@ -63,17 +63,17 @@ export default function Sitemap() {
               title="Overview"
             >
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/deri" className="block py-1 hover:underline">
                   Shipping
                 </Link>
               </li>
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/ds" className="block py-1 hover:underline">
                   Refund
                 </Link>
               </li>
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/sd" className="block py-1 hover:underline">
                   Promotion
                 </Link>
               </li>
@@ -84,17 +84,17 @@ export default function Sitemap() {
               title="Company"
             >
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/asdas" className="block py-1 hover:underline">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/asdas" className="block py-1 hover:underline">
                   Career
                 </Link>
               </li>
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/asdas" className="block py-1 hover:underline">
                   Contact Us
                 </Link>
               </li>
@@ -105,7 +105,7 @@ export default function Sitemap() {
               title="Explore"
             >
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/asdas" className="block py-1 hover:underline">
                   Terms & Conds
                 </Link>
               </li>
@@ -118,7 +118,7 @@ export default function Sitemap() {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="block py-1 hover:underline">
+                <Link to="/asd" className="block py-1 hover:underline">
                   For Developer
                 </Link>
               </li>

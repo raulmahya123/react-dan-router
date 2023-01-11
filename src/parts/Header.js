@@ -47,7 +47,7 @@ export default function Header({ theme, position }) {
             >
               <li className="mx-3 py-6 md:py-0">
                 <Link
-                  to="/"
+                  to="/asdasd"
                   className={[
                     "hover:underline",
                     theme === "white"

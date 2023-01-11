@@ -3,7 +3,7 @@ import React, {
   } from 'react'
   import useAsync from '../../helpers/hooks/useAsync'
   import fetch from '../../helpers/fetch'
-  
+  import Gis from '../../Gis/gis'
   function Loading({ratio = {}}){
     const dummy = [
       {
@@ -125,6 +125,7 @@ import React, {
         }
         </div>
       </div>
+<Gis/>
     </section>
     )
   }

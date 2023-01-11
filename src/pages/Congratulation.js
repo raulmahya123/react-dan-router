@@ -2,10 +2,6 @@ import React from 'react'
 import Header from '../parts/Header'
 import Breadcrumb from '../component/Breadcrumb/index'
 import { Link } from 'react-router-dom'
-// import Hero from "../parts/Hero"
-// import BrowserRoom from '../parts/HomePage/BrowserRoom'
-// import JustArr from '../parts/HomePage/JustArrived'
-
 import Sitemap from '../parts/Sitemap'
 import Footer from '../parts/Footer'
 

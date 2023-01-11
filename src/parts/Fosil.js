@@ -8,7 +8,7 @@ export default function Fosil({ data }) {
   return (
     <>
     <Header/>
-    <section className="bg-gray-100 px-4 py-16">
+    <section className="bg-gray-100 px-4 py-4">
       <div className="container mx-auto">
         <div className="flex flex-start mb-4">
           <h3 className="text-2xl capitalize font-semibold">
@@ -32,8 +32,8 @@ export default function Fosil({ data }) {
                       className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <h5 className="text-lg font-semibold mt-4">{item.title}</h5>
-                  <span className="">{item.price.currency()}</span>
+                  <h5 className="text-lg font-semibold mt-4 py-4">{item.title}</h5>
+                  <span className="py-8">{item.price.currency()}</span>
                   <Link
                     to={`/categories/${item.idc}/products/${item.id}`}
                     className="stretched-link"

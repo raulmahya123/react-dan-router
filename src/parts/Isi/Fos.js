@@ -3,6 +3,7 @@ import React, {
   } from 'react'
   import useAsync from '../../helpers/hooks/useAsync'
   import fetch from '../../helpers/fetch'
+import Gis from "../../Giss/gis"
   
   function Loading({ratio = {}}){
     const dummy = [
@@ -93,12 +94,13 @@ import React, {
   
   
     return (
-   <section className="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+   <section className="flex bg-gray-100" id="browse-the-room">
         <div className="container mx-auto">
           <div className="flex flex-start mb-4">
         </div>
         
-        <div className="grid grid-cols-9 grid-rows-2 gap-4">
+        <div className="grid grid-cols-9 grid-rows-2 gap-8">
+       
             {isLoading ? <Loading ratio={ ratioClassNames } /> :
               data.data.map((item, index) => {
                 return (
@@ -108,23 +110,29 @@ import React, {
                   } ${ ratioClassNames?.wrapper.md?.[item.ratio.md]}`}
             style={{ height: index === 0 ? 180 : "auto"}}
           >
-            <div className="card-shadow rounded-xl">
+           
+            <div className="card-shadow rounded-xl p-10 py-10">
+           
             </div>
             <div className={`overlay ${ ratioClassNames?.meta?.[item.ratio.md]}`}
             >
-                <h5 className="text-lg font-semibold">{item.title}</h5>
+                <h5 className="text-lg font-semibold ">{item.title}</h5>
                   <span className="">
-                  
+                 
                     {item.products} item{item.products > 1 ? "s" : ""}
+                    <Gis/>
                   </span>
+                  
             </div>
                   </div>
                   
               )             
               })
         }
+        
         </div>
       </div>
+      
     </section>
     )
   }
