@@ -8,7 +8,7 @@ export default function Clients() {
         <div
           className="flex-auto w-full px-4 my-4 md:w-auto md:flex-initial md:px-6 md:my-0"
         >
-          <img src="./images/content/logo-adobe.svg" alt="" className="mx-auto" />
+          <img src="/images/content/logo-ikea.svg" alt="" className="mx-auto" />
         </div>
         <div
           className="flex-auto w-full px-4 my-4 md:w-auto md:flex-initial md:px-6 md:my-0"
@@ -27,7 +27,7 @@ export default function Clients() {
         <div
           className="flex-auto w-full px-4 my-4 md:w-auto md:flex-initial md:px-6 md:my-0"
         >
-          <img src="./images/content/logo-miele.svg" alt="" className="mx-auto" />
+          <img src="../../src/images/assets/th.jpeg" alt="" className="mx-auto" />
         </div>
       </div>
     </section>
