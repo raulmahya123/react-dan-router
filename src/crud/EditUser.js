@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -9,9 +9,9 @@ const EditUser = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  useEffect(() => {
-    getUserById();
-  }, []);
+//   useEffect(() => {
+//     getUserById();
+//   }, []);
 
   const updateUser = async (e) => {
     e.preventDefault();
@@ -27,15 +27,14 @@ const EditUser = () => {
     }
   };
 
-  const getUserById = async () => {
-    const response = await axios.get(`http://localhost:5000/users/${id}`);
-    setName(response.data.name);
-    setEmail(response.data.email);
-    setGender(response.data.gender);
-  };
+//   const getUserById = async () => {
+//     const response = await axios.get(`http://localhost:5000/users/${id}`);
+//     setName(response.data.name);
+//     setEmail(response.data.email);
+//     setGender(response.data.gender);
+//   };
 
   return (
-    
     <div className="columns mt-5 is-centered">
       <div className="column is-half">
         <form onSubmit={updateUser}>

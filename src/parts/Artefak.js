@@ -13,7 +13,7 @@ export default function Artefak({ data }) {
         <div className="flex flex-start mb-4">
           <h3 className="text-2xl capitalize font-semibold">
             SELAMAT DATANG <br className="" />
-           DIGUDANG FOSil
+           DIGUDANG BATUAN
           </h3>
         </div>
         <div className="flex overflow-x-auto mb-4 -mx-3">

@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import AddUser from './AddUser';
 import Header from '../parts/Header';
 import Footer from '../parts/Footer';
@@ -29,6 +29,16 @@ const deleteUser = async (id) => {
   return (
     <>
     <Header/>
+    <section className="bg-gray-100 px-4 py-4">
+      <div className="container mx-auto">
+        <div className="flex flex-start mb-4">
+          <h3 className="text-2xl capitalize font-semibold">
+            SELAMAT DATANG <br className="" />
+           TABEL PEMINJAMAN
+          </h3>
+        </div>
+      </div>
+    </section>
     <div className="columns mt-5 is-centered">
         <div className="column is-half">
         <a href='add'><FaBeer/></a>
