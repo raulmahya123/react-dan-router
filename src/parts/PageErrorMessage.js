@@ -17,7 +17,7 @@ export default function PageErrorMessage({
               to="/"
               className="w-full px-8 py-3 text-lg text-gray-900 transition-all duration-200 bg-red-200 rounded-full cursor-pointer focus:outline-none focus:text-black"
             >
-              Back to Shop
+              Back to MUSEUM GEOLOGI
             </Link>
           </div>
         </div>

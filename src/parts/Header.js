@@ -47,7 +47,7 @@ export default function Header({ theme, position }) {
             >
               <li className="mx-3 py-6 md:py-0">
                 <Link
-                  to="/asdasd"
+                  to="/userlist"
                   className={[
                     "hover:underline",
                     theme === "white"
@@ -55,7 +55,7 @@ export default function Header({ theme, position }) {
                       : "text-black md:text-black",
                   ].join(" ")}
                 >
-                  KEPENGURUSAN
+                  PEMINJAMAN
                 </Link>
               </li>
               <li className="mx-3 py-6 md:py-0">

@@ -15,6 +15,9 @@ import Vertebrata from './parts/Vertebrata';
 import Fosil from "./parts/Fosil"
 import Artefak from "./parts/Artefak"
 import Batuan from "./parts/Batuan"
+import UserList from './crud/UserList';
+import AddUser from './crud/AddUser';
+import EditUser from './crud/EditUser';
 
 
 
@@ -36,6 +39,11 @@ function App() {
           <Route path='/fosil' element={<Fosil />} />
           <Route path='/artefak' element={<Artefak/>} />
           <Route path='/batuan' element={<Batuan/>} />
+          <Route path='/userlist' element={<UserList/>} />
+          <Route path='/add' element={<AddUser/>} />
+          <Route path='/edit/:id' element={<EditUser/>} />
+
+
      </Routes>
 
  
