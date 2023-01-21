@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+import Header from '../parts/Header';
+import Footer from '../parts/Footer';
+import Sitemap from '../parts/Sitemap';
 
 const EditUser = () => {
   const [name, setName] = useState("");
@@ -35,7 +38,9 @@ const EditUser = () => {
 //   };
 
   return (
-    <div className="columns mt-5 is-centered">
+    <>
+    <Header/>
+    <div className="columns mt-5 is-centered flex justify-center px-4 py-8 text-center">
       <div className="column is-half">
         <form onSubmit={updateUser}>
           <div className="field">
@@ -77,13 +82,16 @@ const EditUser = () => {
             </div>
           </div>
           <div className="field">
-            <button type="submit" className="button is-success">
+            <button type="submit" className="pl-4bg-[#2952e3]  py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] space-x-4">
               Update
             </button>
           </div>
         </form>
       </div>
     </div>
+    <Sitemap/>
+    <Footer/>
+    </>
   );
 };
 

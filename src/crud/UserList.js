@@ -5,7 +5,7 @@ import axios from 'axios'
 import Header from '../parts/Header';
 import Footer from '../parts/Footer';
 import Sitemap from '../parts/Sitemap';
-import { FaBeer } from 'react-icons/fa';
+import { AiOutlinePlusCircle } from 'react-icons/ai';
 
 const UserList = () => {
 const [users,setUser]= useState([]);
@@ -39,34 +39,49 @@ const deleteUser = async (id) => {
         </div>
       </div>
     </section>
-    <div className="columns mt-5 is-centered">
-        <div className="column is-half">
-        <a href='add'><FaBeer/></a>
-           <tabel className="table is-striped is-fullwidth">
-            <thead>
-                <tr>
-                    <th>no</th>
-                    <th>name</th>
-                    <th>email</th>
-                    <th>gender</th>
-                    <th>action</th>
+    <div className="columns is-centered mt-12 mb-8 flex flex-col gap-12   justify-center px-4 py-8 text-center">
+        <div className="column is-half ">
+        <a className='flex justify-center px-4 py-8 text-center' href='add'><AiOutlinePlusCircle size={80}/> TAMBAH KEHADIRAN</a>
+        <center/>
+     
+           <tabel className="is-striped is-fullwidth  table-fixed ">
+            <thead className='overflow-x-scroll px-0 pt-0 pb-2'>
+                <tr className='box-content h-32 w-32 p-4 border-4 space-x-4 border-b border-blue-gray-50 py-3 px-5 text-left' >
+                <th scope="col"  color="blue" class="text-sm font-medium text-gray-900 px-6 py-4 text-[11px] uppercase text-blue-gray-400  table-auto">
+                NO
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 border-b border-blue-gray-50 text-left">
+              NAME
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 border-b border-blue-gray-50 text-left">
+              EMAIL
+              </th>
+              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 border-b border-blue-gray-50 text-left">
+              GENDER
+              </th>
+                    <th></th>  
+                    <th scope="col" className='mr-10 text-sm font-medium text-gray-900 px-6 py-4 border-b border-blue-gray-50 text-left'>
+              ACTION
+              </th>
+                  
                 </tr>
+                
             </thead>
-            <tbody>
+            <tbody className='border-b' >
                 {users.map((user,index)=>(
                     <tr key={user.id}>
-                    <td>{index +1}</td>
-                    <td>{user.name}</td>
-                    <td>{user.email}</td>
-                    <td>{user.gender}</td>
+                    <td className='text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap border-b border-blue-gray-800 text-left'>{index +1}</td>
+                    <td className='text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap border-b border-blue-gray-800 text-left'>{user.name}</td>
+                    <td className='text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap border-b border-blue-gray-800 text-left'>{user.email}</td>
+                    <td className='text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap border-b border-blue-gray-800 text-left'>{user.gender}</td>
                     <td>
 {/* <Link to={`edit/${user.id}`}className='button is-small is-info'>edit</Link> */}
-<a href={`edit/${user.id}`}>pp</a>
-<button
+<a className='pl-4bg-[#2952e3] mx-10 py-2 px-7  rounded-full cursor-pointer hover:bg-[#2546bd] space-x-4 ' href={`edit/${user.id}`}>EDIT</a>
+<button 
                     onClick={() => deleteUser(user.id)}
-                    className="button is-small is-danger"
+                    className="pl-4bg-[#2952e3]  py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] space-x-4"
                   >
-                    sd
+                    DELETE
                   </button>
 
 {/* <Link onClick={()=> deleteUser(user.id)} className='button is-small is-danger'>delete</Link> */}
@@ -79,6 +94,7 @@ const deleteUser = async (id) => {
            </tabel>
         </div>
     </div>
+   
     <Sitemap/>
     <Footer/>
     </>

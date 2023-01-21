@@ -1,6 +1,10 @@
 import React,{useState} from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom';
+import Header from '../parts/Header';
+import Footer from '../parts/Footer';
+import Sitemap from '../parts/Sitemap';
+
 const AddUser = () => {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
@@ -21,11 +25,13 @@ const navigate = useNavigate();
         }
     };
   return (
-    <div className="column mt-5 is-center">
+    <>
+    <Header/>
+    <div className="column mt-5 is-center flex justify-center px-4 py-8 text-center">
         <div className="column is-half" >
             <form onSubmit={saveUser}>
                 <div className="field">
-                    <label className='label'>name</label>
+                    <label className='label'>NAME</label>
                     <div className="control">
                         <input type="text" 
                         className='input' 
@@ -35,7 +41,7 @@ const navigate = useNavigate();
                     </div>
                 </div>
                 <div className="field">
-                    <label className='label'>email</label>
+                    <label className='label'>EMAIL</label>
                     <div  className="control">
                         <input 
                         type="text" 
@@ -54,19 +60,22 @@ const navigate = useNavigate();
                              onChange={(e)=> setGender(e.target.value)}
                             >
                                 <option value="Male">Male</option>
-                                <option value="Female">Female</option>
+                                <option className='pl-4bg-[#2952e3]  py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] space-x-4' value="Female">Female</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div className="field">
-                    <button type='submit' className='button is-success'>
+                    <button type='submit' className='pl-4bg-[#2952e3]  py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] space-x-4'>
                         save
                     </button>
                 </div>
             </form>
         </div>
     </div>
+    <Sitemap/>
+    <Footer/>
+    </>
   )
 }
 
