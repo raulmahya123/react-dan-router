@@ -97,7 +97,7 @@ export default function BrowserRoom() {
       <div className="container mx-auto">
         <div className="flex flex-start mb-4">
           <h3 className="text-2xl capitalize font-semibold">
-            browse the room <br className="" />that we designed for you
+           GUDANG <br className="" />MUSEUM GEOLOGI
           </h3>
       </div>
       
@@ -111,17 +111,17 @@ export default function BrowserRoom() {
                 } ${ ratioClassNames?.wrapper.md?.[item.ratio.md]}`}
           style={{ height: index === 0 ? 180 : "auto"}}
         >
-          <div className="card-shadow rounded-xl">
+          <div className="card-shadow rounded-xl ">
             <img
-              src={`/images/content/${item.imageUrl}`}
+              src={item.imageUrl}
               alt={item.title}
-              className="object-cover object-center w-full h-full overflow-hidden overlay rounded-xl"
+              className="object-cover object-center w-full h-full overflow-hidden overlay rounded-xl "
             />
           </div>
           <div className={`overlay ${ ratioClassNames?.meta?.[item.ratio.md]}`}
           >
-              <h5 className="text-lg font-semibold">{item.title}</h5>
-                <span className="">
+              <h5 className="text-lg text-white-800 font-semibold">{item.title}</h5>
+                <span className="text-white">
                 
                   {item.products} item{item.products > 1 ? "s" : ""}
                 </span>

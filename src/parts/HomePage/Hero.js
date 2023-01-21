@@ -9,9 +9,9 @@ export default function Hero() {
         SELAMAT DATANG <br className="" />
       </h1>
       <h2 className="px-8 my-6 text-base tracking-wide md:px-0 md:text-lg">
-          Kami menyediakan furniture berkelas yang
+          DI SISTEM INFORMASI
           <br className="hidden lg:block" />
-          membuat ruangan terasa homey
+          MUSEUM GEOLOGI BANDUNG
         </h2>
       <div>
         <a

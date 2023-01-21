@@ -73,7 +73,7 @@ export default function Header({ theme, position }) {
               </li>
               <li className="mx-3 py-6 md:py-0">
                 <Link
-                  to="/Artefak"
+                  to="/sda"
                   className={[
                     "hover:underline",
                     theme === "white"

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../parts/Header'
 import Breadcrumb from '../component/Breadcrumb/index'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 // import Hero from "../parts/Hero"
 // import BrowserRoom from '../parts/HomePage/BrowserRoom'
 // import JustArr from '../parts/HomePage/JustArrived'
@@ -17,7 +17,6 @@ import Suggestion from '../parts/Details/Suggestion'
 
 
 export default function HomePage() {
-
   const {idp} = useParams();
   const {
     data,
@@ -28,7 +27,7 @@ export default function HomePage() {
     run(fetch({
       url: `/api/products/${idp}`
     }));
-  }, [run]);
+  }, [run,idp]);
 
 console.log(data)
 
