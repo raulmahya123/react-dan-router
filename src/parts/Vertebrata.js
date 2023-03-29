@@ -50,7 +50,7 @@ function Vertebrata() {
       data.map((item) => (
         <div>
           <hr />
-          <h1>{item.id.toUpperCase()}</h1>
+          <h1>{item.id}</h1>
           <i>{item.Longitude}</i>
           <h2>{item.Latitude}</h2>
           <h2>{item.Location}</h2>
