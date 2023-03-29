@@ -17,8 +17,8 @@ function Vertebrata() {
     axios
       .get("https://golang4.herokuapp.com/presensi")
       .then((response) => {
-        setdata(response.data.data.data);
-        console.log(response.data.data.data); // Menampilkan console log
+        setdata(response.data.data);
+        console.log(response.data.data); // Menampilkan console log
         setisLoading(false);
       })
       .catch((err) => {
