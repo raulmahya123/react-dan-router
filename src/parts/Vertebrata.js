@@ -15,10 +15,10 @@ function Vertebrata() {
     // URL Ganti dengan alamat github atau API kamu atau URL API MU
     // Method @{get, post, put, patch, delete}
     axios
-      .get("https://sbc-sebatcabut.herokuapp.com/invertebratas")
+      .get("https://golang4.herokuapp.com/presensi")
       .then((response) => {
-        setdata(response.data.data.data);
-        console.log(response.data.data.data); // Menampilkan console log
+        setdata(response.data.data.data.data);
+        console.log(response.data); // Menampilkan console log
         setisLoading(false);
       })
       .catch((err) => {
@@ -50,10 +50,10 @@ function Vertebrata() {
       data.map((item) => (
         <div>
           <hr />
-          <h1>{item.id.toUpperCase()}</h1>
-          <i>{item.nama}</i>
-          <h2>{item.lokasi_ditemukan}</h2>
-          <h2>{item.waktu_ditemukan}</h2>
+          <h1>{item.id}</h1>
+          <i>{item.Nama}</i>
+          <h2>{item.Phone_number}</h2>
+          <h2>{item.Jabatan}</h2>
           <hr />
         </div>
              ))}</div>
